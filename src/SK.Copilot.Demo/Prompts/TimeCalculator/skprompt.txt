@@ -1,0 +1,6 @@
+Based on the user input, calculate the date and time.
+
+Now: {{TimePlugin.Now}}
++++
+Input: {{$input}}
+Result:

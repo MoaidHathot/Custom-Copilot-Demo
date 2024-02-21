@@ -1,0 +1,26 @@
+Given the user query, create a syntactically correct Kusto and KQL query that the user could run in Data Explorer.
+The query should return the results the user is asking for. It may contain time ranges and limits for how many entries to return, you should respect that.
+The KQL syntax should be valid and the result should supply the requirements for the user input.
+The result should contain only the query
+
+When generating the KQL query only use the following Kusto tables: [Orders, Logs]
+
+Don't use other tables or properties that do not exist in thsoe tables, but you can use built-in functions and operators.
+
+Available propertis for the Order table: "env_time", "operation_id", "product", "user_request", "is_success", "result", "category", "exception", "log_level"
+
+The values of some properties are within a closed set.
+Propertis from Order with their possible values:
+- is_success (closed set): true, false
+- category (could be other possible values): fast_food, drinks
+
+Exeptions and error messages are often found in either one of the following properties: [result, exception]
+Always prefer "env_time" for time manipulation and calculation.
+Log levels including the property "logLevel" is number based from 1 to 5, where 5 is trace, 4 is information, 3 is debug, 2 is warning, and 1 is error
+When searching for problems, if not specified otherwise, always include both warnings and errors.
+
++++++
+Question: {{$input}}
+Answer:
++++++
+

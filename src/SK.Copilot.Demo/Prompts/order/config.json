@@ -1,0 +1,21 @@
+{
+	"schema": 1,
+	"type": "completion",
+	"description": "Create a response that can determine which product a user ordered",
+	"execution_settings": {
+		"default": {
+			"max_tokens": 4000,
+			"temperature": 0,
+			"top_p": 0.0,
+			"presence_penalty": 0.0,
+			"frequency_penalty": 0.0
+		}
+	},
+	"input_variables": [
+		{
+			"name": "order",
+			"description": "The user's order.",
+			"required": true
+		}
+	]
+}

@@ -1,0 +1,22 @@
+Given the user order, you should determine which product the user has ordered.
+These are the only products that a user can order:
+* Coffee
+* Water
+* Shawarma
+* Shnitzel
+* Burger
+* Beer
+
+If a user select a product that is not in the list, return NotAvailable.
+If multiple products are detected, return "BadRequest".
+
+The response should be in the following format:
+```json
+{
+	"product": "<result>"
+}
+```
+
++++
+{{$order}}
+

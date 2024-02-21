@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dumpify" Version="0.6.5" />
+		<PackageReference Include="Microsoft.KernelMemory.Core" Version="0.29.240219.2" />
+		<PackageReference Include="Microsoft.KernelMemory.SemanticKernelPlugin"
+			Version="0.29.240219.2" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.4.0" />
+		<PackageReference Include="Microsoft.SemanticKernel.Planners.Handlebars"
+			Version="1.4.0-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.4.0-alpha" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.4.0-alpha" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Prompts\order\config.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Prompts\order\skprompt.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Prompts\Kusto\config.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Prompts\Kusto\skprompt.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Prompts\TimeCalculator\config.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Prompts\TimeCalculator\skprompt.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Memories\AnimeShowTracking.md">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Memories\DumpifyDocs.md">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>
