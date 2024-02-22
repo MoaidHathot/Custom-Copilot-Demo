@@ -1,14 +1,14 @@
-using System.Text;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using Microsoft.SemanticKernel.Plugins.Core;
+using System.Text;
 
 namespace Demo;
 
 #pragma warning disable SKEXP0050
 
-public class Chat00Stream00 : BaseDemo
+public class Chat01Stream00 : BaseDemo
 {
     private readonly ChatHistory _chatHistory = [];
 
@@ -71,4 +71,3 @@ public class Chat00Stream00 : BaseDemo
         return null;
     }
 }
-
